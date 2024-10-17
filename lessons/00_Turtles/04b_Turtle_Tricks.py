@@ -18,6 +18,14 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 # tina.pencolor()
 
 
-... # Your code here
+def shapes(sides,length):
+    angle=360/sides
+    for i in range(sides):
+        tina.forward(length)
+        tina.left(angle)
+
+
+
+shapes(15,30)
 
 turtle.exitonclick()                    # Close the window when we click on it
